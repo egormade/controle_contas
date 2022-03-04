@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserir conta</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <form action="insert.php" method="post"> 
+        <label>Conta</label><br>
+        <select name="tipo_conta" >
+            <option value="Água">Água</option>
+            <option value="Aluguel">Aluguel</option>
+            <option value="Celular">Celular</option>
+            <option value="Crédito">Cartão de Crédito</option>
+            <option value="Energia">Energia</option>
+            <option value="Faculdade">Faculdade</option>
+            <option value="Internet">Internet</option>
+        </select>
+<br>
+        <label>Valor</label><br>
+        <input type="text" name="valor" placeholder="R$"><br>
+
+        <label>Nº de Parcelas</label><br>
+        <select name="n_parcelas" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+<br>    
+        <label>Vencimento</label><br>
+        <input type="date" name="vencimento" >
+<br>
+        <label>Status</label><br>
+        <select name="status_conta" >
+            <option value="paid">Pago</option>
+            <option value="debt">A pagar</option>
+          </select>
+<br>
+          <input type="submit" value="Inserir Conta">
+
+    </form>
+
+
+    
+
+
+
+    </form>
+    
+</body>
+</html>
